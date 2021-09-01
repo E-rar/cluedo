@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluedo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<h1>Cluedo</h1>
+<button type="button" class="btn btn-dark" onclick="revealMystery()">Reveal Mystery</button>
+<div id="appear">
+<h2 id="mystery"></h2>
+<!-- ============================hier ist der Anfang der Charakter Karte ================================================ -->     
+    <div class="card box" style="width: 20rem;">
+        <div class="box-inner">
+        <img id="suspectImg" src="" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" id="suspectData"></h5>
+          <p class="card-text" id="suspectDescription"></p>
+        </div>
+        </div>
+      </div>
+      <div id="aside">
+<!-- ============================hier ist der Anfang der Weapon Karte ================================================ -->          
+        <div class="card box" style="width: 18rem;">
+            
+            <div class="card-body box-inner">
+              <h5 class="card-title" id="weaponName"></h5>
+              <p class="card-text" id="weaponWeight"></p>
+            </div>
+          </div>
+<!-- ============================hier ist der Anfang der Room Karte ================================================ -->
+          <div id="roomcard" class="card box " style="width: 18rem;">
+            
+            <div class="card-body box-inner">
+              <h5 class="card-title" id="room"></h5>
+              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Watch Map
+              </button>
+            </div>
+        </div>
+    </div>
+</div> <!-- bis hier hin display:none -->
+              <!-- Vertically centered modal -->
+<!-- ===============================================hier fängt das Modal an ============================================">
+    
+  </div> -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Map</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <img src="assets/img/Clue_Map.png" alt="">
+        <div class="modal-body">
+            
+        </div>
+      </div>
+    </div>
+  </div>
+           
+          
+      
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
